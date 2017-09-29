@@ -14,40 +14,83 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg" style="background:rgb(7,154,225);">
-      <a class="navbar-brand" href="#">Madisyn's Movement</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation">
+  <!-- <nav class="sticky-top navbar navbar-expand-lg" style="background:rgb(7,154,225);">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      <div class="collapse navbar-collapse container" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only current"></span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resources</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <img id="banner" src="./assets/img/logo.jpg" alt="Madisyn's Movement logo">
+    <a class="navbar-brand" href="#">Madisyn's Movement</a>
+    <div class="collapse navbar-collapse container" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only current"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+  <nav class="sticky-top navbar navbar-expand-lg navbar-light" style="background:rgb(7,154,225);">
+    <a class="navbar-brand" href="#">Madisyn's Movement</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only current"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <header class="container-fluid">
+    <div class="row">
+      <article class="align-self-center col-12 col-lg-6">
+        <h2 class="text-center margin-top-bottom">Our story</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid tempore at ad autem, impedit eligendi dicta ab ex
+          voluptatem corrupti ducimus neque molestiae in! Molestiae ducimus saepe repellat doloremque! Quam dolor exercitationem,
+          quibusdam fugit deleniti ducimus ullam laboriosam eaque ut maiores voluptates nobis veniam non autem omnis, commodi
+          temporibus sint facere earum sequi sed! Consequuntur, placeat? Perferendis, esse voluptate. Rem enim possimus reprehenderit
+          sequi, fugiat rerum totam temporibus exercitationem fuga quae iste soluta quod molestiae repudiandae, laborum consequatur.
+          Eius aliquid fuga, voluptatibus nam aliquam asperiores atque eos. Ab, commodi!
+        </p>
+      </article>
+      <img class="col-12 col-lg-6" id="banner" src="./assets/img/logo.jpg" alt="Madisyn's Movement logo">
+    </div>
   </header>
+
+
   <main class="container">
     <section>
-      <h1 class="margin-top-bottom text-centered">Heading</h1>
+      <h1 class="text-centered">Our mission</h1>
       <div class="row">
-        <article class="col-12 col-md-6">
+        <article class="col-12 col-lg-6">
           <h2 class="text-center">Who are we?</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid tempore at ad autem, impedit eligendi dicta ab ex
@@ -59,7 +102,7 @@
           </p>
         </article>
 
-        <article class="col-12 col-md-6">
+        <article class="col-12 col-lg-6">
           <h2 class="text-center">Why we do this</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsam voluptatibus eaque est commodi dolores veniam esse distinctio
@@ -71,8 +114,51 @@
           </p>
         </article>
       </div>
+      <!-- Carrousel start -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <figure class="carousel-item active">
+      <img class="d-block w-100" src="http://via.placeholder.com/1110x475" alt="First slide">
+      <figcaption class="carousel-caption d-none d-md-block">
+        <h3>Desc</h3>
+        <p>
+          Voluptas quibusdam nulla nostrum tempora ipsum hic ad dicta, obcaecati dolores qui consequatur sapiente distinctio.</p>
+      </figcaption>
+    </figure>
+    <figure class="carousel-item">
+      <img class="d-block w-100" src="http://via.placeholder.com/1110x475" alt="Second slide">
+      <figcaption class="carousel-caption d-none d-md-block">
+        <h3>Desc</h3>
+        <p>
+          Voluptas quibusdam nulla nostrum tempora ipsum hic ad dicta, obcaecati dolores qui consequatur sapiente distinctio.</p>
+      </figcaption>
+    </figure>
+    <figure class="carousel-item">
+      <img class="d-block w-100" src="http://via.placeholder.com/1110x475" alt="Third slide">
+      <figcaption class="carousel-caption d-none d-md-block">
+        <h3>Desc</h3>
+        <p>
+          Voluptas quibusdam nulla nostrum tempora ipsum hic ad dicta, obcaecati dolores qui consequatur sapiente distinctio.</p>
+      </figcaption>
+    </figure>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+</div>
+      <!-- End of carrousel -->
       <div class="row">
-        <article class="col-12 col-md-6">
+        <article class="col-12 col-lg-6">
           <h2 class="text-center">Another subheading</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti iure inventore facere veritatis rem nulla laudantium quibusdam
@@ -83,7 +169,7 @@
             neque impedit quos, hic voluptatibus quaerat, voluptatum laboriosam doloremque ducimus id. Ea ipsam cumque deleniti.
           </p>
         </article>
-        <article class="col-12 col-md-6">
+        <article class="col-12 col-lg-6">
           <h2 class="text-center">Yet another subheading</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio libero asperiores odio, praesentium suscipit, repudiandae
@@ -97,8 +183,12 @@
         </article>
       </div>
     </section>
+
+
+
+
   </main>
-  <footer>
+  <footer class="text-centered">
     <small>&copy; 3B Solutions. Webmaster Alexander Ironside</small>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"></script>
