@@ -3,16 +3,16 @@ module.exports = function(grunt) {
   // 1. All configuration goes here 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    typescript: {
-      base: {
-        src: ['_dev/ts/*.ts'],
-        dest: '_dev/js/app.js',
-        options: {
-          module: 'amd',
-          target: 'es5'
-        }
-      }
-    },
+    // typescript: {
+    //   base: {
+    //     src: ['_dev/ts/*.ts'],
+    //     dest: '_dev/js/app.js',
+    //     options: {
+    //       module: 'amd',
+    //       target: 'es5'
+    //     }
+    //   }
+    // },
     uglify: {
       build: {
         src: "_dev/js/app.js",
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/img/',
+          cwd: '_dev/assets/images/',
           src: ['**/*.{png,jpg,gif}'],
           dest: 'assets/img/'
         }]
@@ -48,14 +48,15 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['_dev/ts/*.ts'],
+        // If needed edit js to ts
+        files: ['_dev/js/*.js'],
         tasks: ['typescript', 'uglify'],
         options: {
           spawn: false,
         }
       },
       css: {
-        files: '_dev/sass/app.sass',
+        files: '_dev/sass/app.scss',
         tasks: ['sass', 'autoprefixer']
       }
     } //End watch

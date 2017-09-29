@@ -1,5 +1,1 @@
-body {
-  background: #aaa;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
+body{background:#E5FFF3;min-height:100vh}.margin-top-bottom{margin:50px 0}.text-centered{text-align:center}.nav-link,.navbar-brand{color:#adda1a;text-shadow:1px 1px 8px black}.nav-link:hover,.navbar-brand:hover{color:#8cff14}#banner{max-width:100vw}

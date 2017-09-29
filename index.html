@@ -1,58 +1,132 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="This is the desctiption. Important for SEO">
-    <!-- Fill description!!!!!!!!! -->
-    <title>Madisyn's Movement</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="This is the desctiption. Important for SEO">
+  <!-- Fill description!!!!!!!!! -->
+  <title>Madisyn's Movement</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./content/app-prefixed.css">
 </head>
+
 <body>
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs|pills" id="navId">
-    <li class="nav-item">
-      <a href="#tab1Id" class="nav-link active">Active</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item" href="#tab2Id">Action</a>
-        <a class="dropdown-item" href="#tab3Id">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#tab4Id">Action</a>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background:rgb(7,154,225);">
+      <a class="navbar-brand" href="#">Madisyn's Movement</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse container" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only current"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+        </ul>
       </div>
-    </li>
-    <li class="nav-item">
-      <a href="#tab5Id" class="nav-link">Another link</a>
-    </li>
-    <li class="nav-item">
-      <a href="#" class="nav-link disabled">Disabled</a>
-    </li>
-  </ul>
-  
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div class="tab-pane fade in active" id="tab1Id" role="tabpanel"></div>
-    <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
-    <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
-    <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
-    <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
-  </div>
-  
-  <script>
-    $('#navId a').click(e => {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-  </script>
-  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </nav>
+    <img id="banner" src="./assets/img/logo.jpg" alt="Madisyn's Movement logo">
+  </header>
+  <main class="container">
+    <section>
+      <h1 class="margin-top-bottom text-centered">Heading</h1>
+      <div class="row">
+        <article class="col-12 col-md-6">
+          <h2 class="text-center">Who are we?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error aliquid tempore at ad autem, impedit eligendi dicta ab ex
+            voluptatem corrupti ducimus neque molestiae in! Molestiae ducimus saepe repellat doloremque! Quam dolor exercitationem,
+            quibusdam fugit deleniti ducimus ullam laboriosam eaque ut maiores voluptates nobis veniam non autem omnis, commodi
+            temporibus sint facere earum sequi sed! Consequuntur, placeat? Perferendis, esse voluptate. Rem enim possimus
+            reprehenderit sequi, fugiat rerum totam temporibus exercitationem fuga quae iste soluta quod molestiae repudiandae,
+            laborum consequatur. Eius aliquid fuga, voluptatibus nam aliquam asperiores atque eos. Ab, commodi!
+          </p>
+        </article>
+
+        <article class="col-12 col-md-6">
+          <h2 class="text-center">Why we do this</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsam voluptatibus eaque est commodi dolores veniam esse distinctio
+            mollitia velit minima excepturi, cupiditate laudantium quia quidem quaerat dolore nobis facilis? Ad, officia
+            blanditiis impedit ipsum quibusdam suscipit tempora molestiae atque neque ea nemo dicta veniam amet magnam minus
+            odio officiis autem? Suscipit impedit molestiae, quod doloribus dolore saepe libero eligendi. Est sunt ut tenetur
+            cupiditate doloremque explicabo at fugiat delectus, dicta dolorem, inventore deleniti qui voluptate harum magnam
+            voluptatibus possimus minima molestiae quas repellendus modi, suscipit unde. Nobis, maiores rerum!
+          </p>
+        </article>
+      </div>
+      <div class="row">
+        <article class="col-12 col-md-6">
+          <h2 class="text-center">Another subheading</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti iure inventore facere veritatis rem nulla laudantium quibusdam
+            voluptatibus ipsum velit molestias animi, labore ratione aspernatur pariatur. Assumenda, illum. Explicabo, aspernatur.
+            Nam officiis natus ratione est odit, culpa earum placeat alias qui. Dolores impedit aliquid hic sit ratione,
+            saepe totam praesentium, laboriosam nam in dolor exercitationem, reiciendis nobis nesciunt cum quas? Asperiores
+            ipsa aliquam dicta facilis accusantium ipsam consequatur excepturi commodi sint veniam illo suscipit deleniti
+            neque impedit quos, hic voluptatibus quaerat, voluptatum laboriosam doloremque ducimus id. Ea ipsam cumque deleniti.
+          </p>
+        </article>
+        <article class="col-12 col-md-6">
+          <h2 class="text-center">Yet another subheading</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla optio libero asperiores odio, praesentium suscipit, repudiandae
+            eaque quibusdam tempore distinctio dicta temporibus, ipsam sint! Voluptatum magni magnam eveniet libero officia.
+            Dolorum eum cupiditate vitae asperiores, animi officia impedit, illo deleniti cumque porro facere laboriosam
+            rerum reprehenderit. Corrupti illo provident et cumque? Voluptatum fuga magni porro cumque itaque aliquam, repudiandae
+            doloribus. Hic quam fugit doloribus magni eveniet sapiente aspernatur, dignissimos nesciunt. Repellat inventore
+            hic quidem mollitia odit nemo nobis eveniet beatae sapiente natus, voluptatem accusantium fugiat facilis illo
+            placeat consectetur quis.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <small>&copy; 3B Solutions. Webmaster Alexander Ironside</small>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+      crossorigin="anonymous"></script>
+    <script src="./scripts/app.min.js"></script>
+  </footer>
 </body>
+
 </html>
+
+
+<!-- INFO ON THE WEBSITE:
+
+shared. header => logo $$
+               => Navbar => Text green, bg blue $$
+        footer => links, copy, itd
+a.    Home => Basic info. The story 4-5 paragraphs, /*video*/, images in carrousel.
+
+b.    About => More info. Full story, who is part of it and so on.
+
+c.    Contact Us => h1{We can help}, form, map, phone, mail;
+
+d.    Resources => ?
+
+e.    Events => Here we will have a collection of our events
+
+
+-->
