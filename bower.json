@@ -1,0 +1,22 @@
+{
+  "name": "The basic setup",
+  "description": "This is the basic setup for projects",
+  "main": ".bowerrc",
+  "authors": [
+    "Alexander Ironside"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/alex3wielki/project-setup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "_dev/additional_scripts/",
+    "test",
+    "tests",
+    ".dev/additional_scripts/"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
